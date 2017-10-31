@@ -1,0 +1,6 @@
+-Chú ý các phần anh đã comment trong code
+-Kích thước trong layout thường đặt số chia hết cho 5. Hạn chế set số cứng
+-Không được dùng textview để làm đường kẻ.
+-Chọn lại màu sắc cho phù hợp một tí, app thể thao thì đừng dùng màu tối
+-Về git thì em mới chỉ commit được. chưa tạo nhánh mới, chưa có pull request
+-Chấm điểm: code em đạt 3.5/5 điểm, git đạt 1.5/5 điểm. Tổng 5 điểm.

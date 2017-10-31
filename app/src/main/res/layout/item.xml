@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     android:orientation="vertical"
     android:weightSum="1">
 
@@ -37,7 +38,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1.14"
-                    android:gravity="center"
+                    android:gravity="left|center"
                     android:text="Đội Bóng: "
                     android:textColor="@android:color/black"
                     android:textSize="14sp" />
@@ -71,7 +72,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:gravity="center"
+                    android:gravity="left|center"
                     android:text="Thuộc Nước:"
                     android:textColor="@android:color/black"
                     android:textSize="14sp" />
@@ -103,7 +104,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:gravity="center"
+                    android:gravity="left|center"
                     android:text="Trận đấu sẽ diễn ra 10/10/2018"
                     android:textColor="@android:color/black" />
             </LinearLayout>

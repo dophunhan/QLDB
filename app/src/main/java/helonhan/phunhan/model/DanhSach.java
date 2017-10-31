@@ -5,10 +5,11 @@ package helonhan.phunhan.model;
  */
 
 public class DanhSach {
-    private String Name;
-    private String Quoctich;
-    private int Hinh;
-
+    private String Name;//name
+    private String Quoctich;//quocTich
+    private int Hinh;//hinh
+    //Để trống một dòng thôi
+    //tên thuộc tính bắt đầu chữ cái thường, nếu được thì đặt bằng tiếng Anh cho dễ
 
 
     @Override

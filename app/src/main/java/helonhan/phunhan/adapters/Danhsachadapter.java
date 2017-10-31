@@ -1,4 +1,5 @@
-package helonhan.phunhan.adapter;
+package helonhan.phunhan.adapters;
+//Chú ý tên packpage, anh đã đổi lại rồi nhé
 
 import android.app.Activity;
 import android.support.annotation.LayoutRes;
@@ -13,17 +14,19 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import helonhan.phunhan.congty.project_qldb.R;
+import helonhan.phunhan.congty.activities.R;
 import helonhan.phunhan.model.DanhSach;
 
 /**
- * Created by DELL on 10/20/2017.
+ * Created by DELL on 10/20/2017. Đổi tên Dev rõ ràng hơn, anh thì anh dung Tran Quoc Hoan luôn
  */
 
-public class Danhsachadapter extends ArrayAdapter<DanhSach>{
+public class Danhsachadapter extends ArrayAdapter<DanhSach>{//Kiếm cái tên nào khác đi, Danhsach nghe củ chuối quá
     Activity context;
     @LayoutRes int resource;
-    @NonNull List<DanhSach> objects;
+    @NonNull List<DanhSach> objects;//đổi tên rõ ràng hơn
+    //set về private, để trống một dòng
+
     public Danhsachadapter(@NonNull Activity context, @LayoutRes int resource, @NonNull List<DanhSach> objects) {
         super(context, resource, objects);
         this.context = context;
@@ -47,8 +50,5 @@ public class Danhsachadapter extends ArrayAdapter<DanhSach>{
 
         return row;
     }
-
-
-
-
+    //Không được để dòng trống ở phần này
 }

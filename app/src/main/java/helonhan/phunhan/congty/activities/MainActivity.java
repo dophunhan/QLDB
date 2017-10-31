@@ -1,21 +1,19 @@
-package helonhan.phunhan.congty.project_qldb;
+package helonhan.phunhan.congty.activities;
+//đã đổi tên packpage
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
-import helonhan.phunhan.adapter.Danhsachadapter;
+import helonhan.phunhan.adapters.Danhsachadapter;
 import helonhan.phunhan.model.DanhSach;
 
 public class MainActivity extends AppCompatActivity {
         ListView lvDanhSach;
-        ArrayList<DanhSach> arrdanhsach;
-        Danhsachadapter dsadapter;
+        ArrayList<DanhSach> arrdanhsach;//Kiểu list thì đặt tên biến phải để số nhiều, thêm s, hoặc es như trong tiếng Anh
+        Danhsachadapter dsadapter;//Đặt tên lại rõ ràng hơn
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +36,9 @@ public class MainActivity extends AppCompatActivity {
         lvDanhSach.setAdapter(dsadapter);
         fakedanhsach();
     }
-    private void fakedanhsach(){
+    //Để trống một dòng rồi viết phương thức tiếp theo.
+
+    private void fakedanhsach(){//Viêt lại tên phương thức, sửa lại thành fakeDanhSac() nên viết một phương thức getAll() ở trong model rồi gọi ra chứ không nên viết ở Activity.
         arrdanhsach.add(new DanhSach("Chelsea","Anh",R.drawable.chelsea));
         arrdanhsach.add(new DanhSach("acmilan","Phap",R.drawable.acmilan));
         arrdanhsach.add(new DanhSach("barcelona","Duc",R.drawable.barcelona));
@@ -49,5 +49,5 @@ public class MainActivity extends AppCompatActivity {
         arrdanhsach.add(new DanhSach("liverpool","VietNam",R.drawable.liverpool));
         arrdanhsach.add(new DanhSach("manunited","Thai LAn",R.drawable.manunited));
     }
-
+//Không được để dòng trống ở đây
 }

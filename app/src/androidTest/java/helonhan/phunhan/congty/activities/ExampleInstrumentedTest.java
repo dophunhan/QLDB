@@ -1,4 +1,4 @@
-package helonhan.phunhan.congty.project_qldb;
+package helonhan.phunhan.congty.activities;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
